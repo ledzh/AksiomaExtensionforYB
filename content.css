@@ -1,0 +1,33 @@
+body {
+    background-color: #343434!important;
+}
+
+div.formblock img {
+    display: none;
+}
+
+.formblock {
+    height: 38%!important;
+    width: 20%!important;
+    background-color: #434343!important;
+}
+
+.formblock button {
+    background-color:#c7691c!important;
+    border:none;
+    margin-top: 20px!important;
+}
+
+.formblock button:active {
+    background-color:#ed7717!important;
+    
+}
+
+.formcontainer {
+    padding-left: 7%!important;
+    padding-right: 7%!important;
+}
+
+tr td[valign="middle"] img {
+    mix-blend-mode: luminosity;
+}

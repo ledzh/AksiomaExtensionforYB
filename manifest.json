@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Аксиома Костыли",
+    "version": "1.0",
+    "description": "Наши костыли для сайта Аксиома",
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    "page_action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://poligraf.simprint.pro/*"],
+            "js": ["content.js", "jquery-3.7.1.min.js"],
+            "css": ["content.css"]
+        }
+    ],
+
+    "permissions": [
+        "tabs",
+        "https://poligraf.simprint.pro/*"
+    ]
+}
